@@ -1,6 +1,9 @@
 # LaTeX files
 *.aux
 *.log
+*.fdb_latexmk
+*.fls
+*.synctex.gz
 
 # Misc files
 *.DS_Store

@@ -1,0 +1,69 @@
+% Exercise 1.1.1
+
+\begin{itemize}
+    \item[(a)]
+        For $\mathbb{F}$ given by the set containing zero and all numbers
+        of the form
+        \[
+           \pm (1 + f) \times 2^n, 
+        \]
+        where $n \in \mathbb{N}$ and
+        \[
+            f = \sum_{i=1}^4 b_i 2^{-i}, \qquad b_i \in \lbrace 0, 1 \rbrace,
+        \]
+        we have
+        \[
+            [1/2, 4] \cap \mathbb{F} = \biggl\lbrace \frac{1}{2}, \frac{17}{32}, 
+            \frac{9}{16}, \dotsb
+            1, 1 + \frac{1}{16}, 1 + \frac{1}{8} \dotsb, 2, 2 + \frac{1}{8},
+            2 + \frac{1}{4}, \dotsb 4 \biggr\rbrace.
+        \]
+    \item[(b)]
+        For $\mathbb{F}$ as above, we have the smallest $n$ s.t. 
+        \[
+            \frac{1}{10} \in [2^n, 2^{n+1})
+        \]
+        given by $n = -4$, so that
+        \[
+            [2^n, 2^{n+1}) = \biggl[\frac{1}{16}, \frac{1}{8}\biggr).
+        \]
+        Then, we have
+        \[
+            [2^n, 2^{n+1}) \cap \mathbb{F} = \biggl\lbrace \frac{1}{16}, 
+            \frac{17}{256}, \frac{5}{64}, \dotsb \frac{1}{8}, \biggr\rbrace.
+        \]
+        From this interval, we see that
+        \[
+            \frac{25}{256} < \frac{1}{10} < \frac{13}{128}
+        \]
+        Then, since 
+        \[
+            \biggl\lvert \frac{1}{10} - \frac{25}{256} \biggr\rvert \approx 
+            0.0023437500000000056
+        \]
+        and
+        \[
+            \biggl\lvert \frac{13}{128} - \frac{1}{10} \biggr\rvert \approx 
+            0.0015624999999999944,
+        \]
+        clearly $13/128$ is the closest member of $\mathbb{F}$ to the real number 
+        $1/10$.
+    \item[(c)]
+        Suppose we have 
+        \begin{equation*}
+            \begin{split}
+                \lvert (1 + f) \times 2^{n+1} - (1 + f) \times 2^n \rvert > 1 \\
+                \Leftrightarrow \biggl(1 + \sum_{i=1}^4 b_i 2^{-i}\biggr)
+                \times 2^{n+1} 
+                - \biggl(1 + \sum_{i=1}^4 b_i 2^{-i}\biggr) \times 2^n > 1 \\
+                \Leftrightarrow \sum_{i=1}^4 b_i 2^{-i}\times 2^{n+1} 
+                - \sum_{i=1}^4 b_i 2^{-i} \times 2^n > 1 \\
+                \Leftrightarrow 2^{n+1}\sum_{i=1}^4 \left(b_i 2^{-i} 
+                - b_i 2^{-(i+1)}\right) > 1 \\
+                \Leftrightarrow \sum_{i=1}^4 \left(b_i 2^{-i} 
+                - b_i 2^{-(i+1)}\right) > \frac{1}{2^{n+1}} \\
+                \Leftrightarrow \sum_{i=1}^4 2^{-i} \left(b_i - \frac{b_i}{2}\right) 
+                > \frac{1}{2^{n+1}} \\
+            \end{split}
+        \end{equation*}
+\end{itemize}
