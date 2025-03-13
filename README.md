@@ -1,4 +1,4 @@
 # fnc
 
-Examples and exercises from [Fundamentals of Numerical Computation - Julia Edition](https://tobydriscoll.net/fnc-julia/home.html) -
+Examples and exercises in Julia from [Fundamentals of Numerical Computation](https://fncbook.com/) -
 Tobin A. Driscoll & Richard J. Braun
