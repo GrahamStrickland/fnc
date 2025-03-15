@@ -49,21 +49,19 @@
         clearly $13/128$ is the closest member of $\mathbb{F}$ to the real number 
         $1/10$.
     \item[(c)]
-        Suppose we have 
+        From (a), we see that 
+        \[
+            n \in \lbrace 1, 2, 3, 4 \rbrace \Rightarrow n \in \mathbb{F},
+        \]
+        since $3 = 2 + \frac{8}{8}$. But then we have
         \begin{equation*}
-            \begin{split}
-                \lvert (1 + f) \times 2^{n+1} - (1 + f) \times 2^n \rvert > 1 \\
-                \Leftrightarrow \biggl(1 + \sum_{i=1}^4 b_i 2^{-i}\biggr)
-                \times 2^{n+1} 
-                - \biggl(1 + \sum_{j=1}^4 b_j 2^{-j}\biggr) \times 2^n > 1 \\
-                \Leftrightarrow \sum_{i=1}^4 b_i 2^{-i}\times 2^{n+1} 
-                - \sum_{j=1}^4 b_j 2^{-j} \times 2^n > 1 \\
-                \Leftrightarrow 2^n\sum_{i,j=1}^4 \left(b_i 2^{1-i} 
-                - b_j 2^{-j}\right) > 1 \\
-                \Leftrightarrow 2^n > \frac{1}{\sum_{i,j=1}^4 \left(b_i 2^{1-i} 
-                - b_j 2^{-j}\right)} \\
-                \Leftrightarrow n > \log_2 \Biggl[\frac{1}{\sum_{i,j=1}^4 \left(b_i 2^{1-i} 
-                - b_j 2^{-j}\right)}\Biggr] \\
-            \end{split}
+            [4, 8] \cap \mathbb{F} = \biggl\lbrace 4, 4 + \frac{1}{4}, 
+            4 + \frac{1}{2}, \dotsb
+            5, 5 + \frac{1}{2}, 6, 7, 8\biggr\rbrace
         \end{equation*}
+        and
+        \begin{equation*}
+            [8, 16] \cap \mathbb{F} = \lbrace 8, 10, 12, 14, 16 \rbrace,
+        \end{equation*}
+        so that the the smallest positive integer not in $\mathbb{F}$ is 9.
 \end{itemize}
