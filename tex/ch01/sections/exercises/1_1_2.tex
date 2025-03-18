@@ -11,31 +11,35 @@
             so that
             \begin{equation*}
                 \begin{split}
-                    \Biggl\lvert \frac{\text{fl}(x) - x}{x} \Biggr\rvert 
-                    &\leq \frac{2^{n-d-1}}{2^n} \\
-                    \Leftrightarrow -\frac{2^{n-d-1}}{2^n} \leq 
-                    \frac{\text{fl}(x) - x}{x} &\leq \frac{2^{n-d-1}}{2^n} \\
-                    \Leftrightarrow -x\frac{2^{n-d-1}}{2^n} \leq 
-                    \text{fl}(x) - x &\leq x\frac{2^{n-d-1}}{2^n} \\
-                    \Leftrightarrow x \biggl(1 - \frac{2^{n-d-1}}{2^n}\biggr) 
-                    \leq \text{fl}(x) &\leq x 
-                    \biggl(1 + \frac{2^{n-d-1}}{2^n} \biggr).
+                    \lvert \text{fl}(x) - x \rvert &\leq \frac{\lvert x \rvert}{2}
+                    \epsilon_{\text{mach}} \\
+                    \Leftrightarrow -\frac{\lvert x \rvert}{2}\epsilon_{\text{mach}}
+                    \leq \text{fl}(x) - x &\leq \frac{\lvert x \rvert}{2}
+                    \epsilon_{\text{mach}} \\
+                    \Leftrightarrow x - \frac{\lvert x \rvert}{2}\epsilon_{\text{mach}}
+                    \leq \text{fl}(x) &\leq x + \frac{\lvert x \rvert}{2}
+                    \epsilon_{\text{mach}} \\
                 \end{split}
             \end{equation*}
-            Thus, if we define
+            for
             \[
-                \epsilon = \pm \frac{2^{n-d-1}}{2^n}, 
+                \lvert \epsilon \rvert \leq \frac{1}{2}\epsilon_{\text{mach}}.
             \]
-            we have
+        \item[($\Leftarrow$)]
+            Now, suppose that
             \[
-                \lvert \epsilon \rvert \leq \frac{1}{2}\epsilon_{\text{mach}}
+                \text{fl}(x) = x(1 + \epsilon) \quad \text{for some} \quad 
+                \lvert \epsilon \rvert \leq \frac{1}{2}\epsilon_{\text{mach}},
             \]
-            and
+            so that
             \begin{equation*}
                 \begin{split}
-                    x (1 - \epsilon) \leq \text{fl}(x) &\leq x (1 + \epsilon) \\
-                    \Leftrightarrow \text{fl}(x) &\leq x (1 + \lvert\epsilon\rvert) \\
-                                                 &= x (1 + \epsilon).
+                    \text{fl}(x) - x &= \epsilon x\\
+                    \Leftrightarrow \lvert \text{fl}(x) - x \rvert 
+                                     &= \lvert \epsilon x \rvert \\
+                    \Leftrightarrow \frac{\lvert \text{fl}(x) - x\rvert}{\lvert x \rvert}
+                                     &= \lvert \epsilon \rvert \\
+                                     &\leq \frac{1}{2}\epsilon_{\text{mach}}.
                 \end{split} 
             \end{equation*}
     \end{itemize}
