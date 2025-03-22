@@ -18,12 +18,18 @@
                     \epsilon_{\text{mach}} \\
                     \Leftrightarrow x - \frac{\lvert x \rvert}{2}\epsilon_{\text{mach}}
                     \leq \text{fl}(x) &\leq x + \frac{\lvert x \rvert}{2}
-                    \epsilon_{\text{mach}} \\
+                    \epsilon_{\text{mach}},
                 \end{split}
             \end{equation*}
+            so that clearly
+            \[
+                x \leq \text{fl}(x) 
+                \leq x\left(1 + \frac{1}{2}\epsilon_{\text{mach}}\right)
+            \]
+            or $\text{fl}(x) = x(1 + \epsilon)$
             for
             \[
-                \lvert \epsilon \rvert \leq \frac{1}{2}\epsilon_{\text{mach}}.
+                0 \leq \lvert \epsilon \rvert \leq \frac{1}{2}\epsilon_{\text{mach}}.
             \]
         \item[($\Leftarrow$)]
             Now, suppose that
